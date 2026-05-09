@@ -11,7 +11,6 @@ import org.openjdk.jmh.annotations.State;
 @State(Scope.Benchmark)
 public class FibonacciBenchmark {
 
-    // JMH buscará este parámetro. El valor por defecto puede ser cualquiera.
     @Param({"10"}) 
     public int n;
 
