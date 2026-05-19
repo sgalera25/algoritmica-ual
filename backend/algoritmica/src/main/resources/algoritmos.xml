@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<algoritmos>
+    <algoritmo>
+        <id>1</id>
+        <nombre>Fibonacci Iterativo</nombre>
+        <tipo>Iterativo</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FibonacciBenchmark.testIterativo</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>4</defaultValue>
+                <minDefault>3</minDefault>
+                <maxDefault>1000</maxDefault>
+                <stepDefault>50</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>O(n)</complejidad>
+        <descripcion>Cálculo de Fibonacci mediante bucle simple. Muy eficiente en tiempo y memoria.</descripcion>
+        <warmup>2</warmup>
+        <measurement>2</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>2</id>
+        <nombre>Fibonacci Recursivo</nombre>
+        <tipo>Recursivo</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FibonacciBenchmark.testRecursivo</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>20</defaultValue>
+                <minDefault>5</minDefault>
+                <maxDefault>46</maxDefault>
+                <stepDefault>2</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>O(2^n) - exponencial</complejidad>
+        <descripcion>Calcula el n-ésimo número de Fibonacci.</descripcion>
+        <warmup>2</warmup>
+        <measurement>3</measurement>
+        <forks>1</forks>
+		<timeUnit>ms</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>3</id>
+        <nombre>Fibonacci Tail Recursion</nombre>
+        <tipo>Recursión de cola</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FibonacciBenchmark.testTail</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>100</defaultValue>
+                <minDefault>10</minDefault>
+                <maxDefault>1000</maxDefault>
+                <stepDefault>50</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>Indicar complejidad</complejidad>
+        <descripcion>indicar descripción.</descripcion>
+        <warmup>3</warmup>
+        <measurement>5</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>4</id>
+        <nombre>Factorial Iterativo</nombre>
+        <tipo>Iterativo</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FactorialBenchmark.testIterativo</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>12</defaultValue>
+                <minDefault>5</minDefault>
+                <maxDefault>100</maxDefault>
+                <stepDefault>10</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>Indicar complejidad</complejidad>
+        <descripcion>indicar descripción.</descripcion>
+        <warmup>3</warmup>
+        <measurement>5</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>5</id>
+        <nombre>Factorial Recursivo</nombre>
+        <tipo>Recursivo</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FactorialBenchmark.testRecursivo</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>10</defaultValue>
+                <minDefault>1</minDefault>
+                <maxDefault>50</maxDefault>
+                <stepDefault>5</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>Indicar complejidad</complejidad>
+        <descripcion>indicar descripción.</descripcion>
+        <warmup>2</warmup>
+        <measurement>3</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>6</id>
+        <nombre>Factorial Tail Recursion</nombre>
+        <tipo>Recursión de cola</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.FactorialBenchmark.testTail</clase>
+        <parametros>
+            <parametro>
+                <nombre>n</nombre>
+                <tipo>number</tipo>
+                <defaultValue>10</defaultValue>
+                <minDefault>1</minDefault>
+                <maxDefault>50</maxDefault>
+                <stepDefault>5</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>Indicar complejidad</complejidad>
+        <descripcion>indicar descripción.</descripcion>
+        <warmup>3</warmup>
+        <measurement>5</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>7</id>
+        <nombre>Potencia Iterativa</nombre>
+        <tipo>Matemático</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.PotenciaBenchmark.testIterativo</clase>
+        <parametros>
+            <parametro>
+                <nombre>base</nombre>
+                <tipo>number</tipo>
+                <defaultValue>2.0</defaultValue>
+            </parametro>
+            <parametro>
+                <nombre>exponente</nombre>
+                <tipo>number</tipo>
+                <defaultValue>10</defaultValue>
+                <minDefault>1</minDefault>
+                <maxDefault>1000</maxDefault>
+                <stepDefault>100</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>O(exponente)</complejidad>
+        <descripcion>Calcula la potencia de un número de forma iterativa.</descripcion>
+        <warmup>2</warmup>
+        <measurement>3</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>8</id>
+        <nombre>Potencia Recursiva</nombre>
+        <tipo>Matemático</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.PotenciaBenchmark.testRecursivo</clase>
+        <parametros>
+            <parametro>
+                <nombre>base</nombre>
+                <tipo>number</tipo>
+                <defaultValue>2.0</defaultValue>
+            </parametro>
+            <parametro>
+                <nombre>exponente</nombre>
+                <tipo>number</tipo>
+                <defaultValue>10</defaultValue>
+                <minDefault>1</minDefault>
+                <maxDefault>1000</maxDefault>
+                <stepDefault>100</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>O(exponente)</complejidad>
+        <descripcion>Calcula la potencia de un número de forma iterativa.</descripcion>
+        <warmup>2</warmup>
+        <measurement>3</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+    <algoritmo>
+        <id>9</id>
+        <nombre>Potencia Tail</nombre>
+        <tipo>Matemático</tipo>
+        <clase>org.algoritmica.benchmark.benchmarks.PotenciaBenchmark.testTail</clase>
+        <parametros>
+            <parametro>
+                <nombre>base</nombre>
+                <tipo>number</tipo>
+                <defaultValue>2.0</defaultValue>
+            </parametro>
+            <parametro>
+                <nombre>exponente</nombre>
+                <tipo>number</tipo>
+                <defaultValue>10</defaultValue>
+                <minDefault>1</minDefault>
+                <maxDefault>1000</maxDefault>
+                <stepDefault>100</stepDefault>
+            </parametro>
+        </parametros>
+        <complejidad>O(exponente)</complejidad>
+        <descripcion>Calcula la potencia de un número de forma iterativa.</descripcion>
+        <warmup>2</warmup>
+        <measurement>3</measurement>
+        <forks>1</forks>
+		<timeUnit>ns</timeUnit>
+    </algoritmo>
+	<algoritmo>
+    <id>10</id>
+
+    <nombre>Acceso Constante Array</nombre>
+    <tipo>Acceso Directo</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.ArrayAccessBenchmark.testAccesoConstante</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>1000</defaultValue>
+            <minDefault>1000</minDefault>
+            <maxDefault>10000000</maxDefault>
+            <stepDefault>1000000</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(1) - constante</complejidad>
+    <descripcion>Acceso directo a una posición de un array mediante índice.</descripcion>
+    <warmup>5</warmup>
+    <measurement>5</measurement>
+    <forks>1</forks>
+	<timeUnit>ns</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>11</id>
+    <nombre>Búsqueda Binaria</nombre>
+    <tipo>Búsqueda</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.BinarySearchBenchmark.testBinarySearch</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>1000</defaultValue>
+            <minDefault>1000</minDefault>
+            <maxDefault>10000000</maxDefault>
+            <stepDefault>1000000</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(log n)</complejidad>
+    <descripcion>Búsqueda binaria sobre un array ordenado.</descripcion>
+    <warmup>5</warmup>
+    <measurement>5</measurement>
+    <forks>1</forks>
+    <timeUnit>ns</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>12</id>
+    <nombre>Búsqueda Lineal</nombre>
+    <tipo>Búsqueda</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.LinearSearchBenchmark.testLinearSearch</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>1000</defaultValue>
+            <minDefault>1000</minDefault>
+            <maxDefault>10000000</maxDefault>
+            <stepDefault>1000000</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(n)</complejidad>
+    <descripcion>Recorre secuencialmente el array hasta encontrar el elemento buscado.</descripcion>
+    <warmup>5</warmup>
+    <measurement>5</measurement>
+    <forks>1</forks>
+    <timeUnit>ns</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>13</id>
+    <nombre>MergeSort</nombre>
+    <tipo>Divide y Vencerás</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.MergeSortBenchmark.testMergeSort</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>1000</defaultValue>
+            <minDefault>1000</minDefault>
+            <maxDefault>500000</maxDefault>
+            <stepDefault>50000</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(n log n)</complejidad>
+    <descripcion>Algoritmo de ordenación basado en Divide y Vencerás.</descripcion>
+    <warmup>3</warmup>
+    <measurement>5</measurement>
+    <forks>1</forks>
+    <timeUnit>ns</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>14</id>
+    <nombre>Bubble Sort</nombre>
+    <tipo>Ordenación</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.BubbleSortBenchmark.testBubbleSort</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>100</defaultValue>
+            <minDefault>100</minDefault>
+            <maxDefault>10000</maxDefault>
+            <stepDefault>500</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(n^2)</complejidad>
+    <descripcion>Algoritmo de ordenación simple que compara e intercambia elementos adyacentes repetidamente.</descripcion>
+    <warmup>2</warmup>
+    <measurement>3</measurement>
+    <forks>1</forks>
+    <timeUnit>ms</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>15</id>
+    <nombre>Multiplicación de Matrices</nombre>
+    <tipo>Álgebra Lineal</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.MatrixMultiplicationBenchmark.testMatrixMultiplication</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>50</defaultValue>
+            <minDefault>100</minDefault>
+            <maxDefault>1500</maxDefault>
+            <stepDefault>100</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(n^3)</complejidad>
+    <descripcion>Multiplica dos matrices cuadradas utilizando tres bucles anidados.</descripcion>
+    <warmup>2</warmup>
+    <measurement>3</measurement>
+    <forks>1</forks>
+    <timeUnit>ms</timeUnit>
+</algoritmo>
+<algoritmo>
+    <id>16</id>
+    <nombre>Generación de Permutaciones</nombre>
+    <tipo>Backtracking</tipo>
+    <clase>org.algoritmica.benchmark.benchmarks.PermutationsBenchmark.testPermutations</clase>
+    <parametros>
+        <parametro>
+            <nombre>n</nombre>
+            <tipo>number</tipo>
+            <defaultValue>6</defaultValue>
+            <minDefault>3</minDefault>
+            <maxDefault>9</maxDefault>
+            <stepDefault>1</stepDefault>
+        </parametro>
+    </parametros>
+    <complejidad>O(n!)</complejidad>
+    <descripcion>Genera todas las permutaciones posibles de un conjunto de elementos utilizando backtracking.</descripcion>
+    <warmup>2</warmup>
+    <measurement>3</measurement>
+    <forks>1</forks>
+    <timeUnit>ms</timeUnit>
+</algoritmo>
+</algoritmos>
